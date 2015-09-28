@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://raw.githubusercontent.com/Openbay/OBBlurPicker/master/OBBlurPickerDemo.gif"/></p>
+<p align="center"><img src="OBBlurPickerDemo.gif"/></p>
 
 ## OBBlurPicker
 
