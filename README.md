@@ -1,3 +1,6 @@
+
+<p align="center"><img src="https://raw.githubusercontent.com/Openbay/OBBlurPicker/master/OBBlurPickerDemo.gif"/></p>
+
 ## OBBlurPicker
 
 OBBlurPicker was written because most attempts to integrate a UIPickerView into a UI look wonky
