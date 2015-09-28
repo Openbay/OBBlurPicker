@@ -29,6 +29,11 @@
   return self.overlayView.picker;
 }
 
+- (void)dealloc {
+  [self.overlayView.doneButton removeTarget: self action: @selector(onDoneTapped:) forControlEvents: UIControlEventTouchUpInside];
+  [self.overlayView.cancelButton removeTarget: self action: @selector(onCancelTapped:) forControlEvents: UIControlEventTouchUpInside];
+}
+
 #pragma mark - Static Show and Hide
 
 + (OBBlurPicker *)showWithParentView: (UIView *)parentView withMessage: (NSString *)message {
