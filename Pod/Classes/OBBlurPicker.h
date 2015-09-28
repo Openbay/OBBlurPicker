@@ -38,23 +38,20 @@
 
 #pragma mark - Show and Hide
 
-/** Creates and shows a shared OBBlurPicker with a cancel button
+/** Creates and shows an OBBlurPicker with a cancel button
  
  @param parentView A view to show the picker in.
  @param message The message to show at the top of the picker. Use to instruct the user what they are picking.
 */
 + (OBBlurPicker *)showWithParentView: (UIView *)parentView withMessage: (NSString *)message;
 
-/** Creates and shows a shared OBBlurPicker
+/** Creates and shows an OBBlurPicker
  
  @param parentView A view to show the picker in.
  @param message The message to show at the top of the picker. Use to instruct the user what they are picking.
  @param shouldShow YES if you would like to show a cancel button.
  */
 + (OBBlurPicker *)showWithParentView: (UIView *)parentView withMessage: (NSString *)message shouldShowCancelButton: (BOOL)shouldShow;
-
-/** Hide the shared OBBlurPicker */
-+ (void)hide;
 
 /** Shows the recieving OBBlurPicker with a cancel button
  

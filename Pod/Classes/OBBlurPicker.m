@@ -16,13 +16,6 @@
 
 @implementation OBBlurPicker
 
-+ (instancetype)sharedBlurPicker {
-  static OBBlurPicker *_sharedBlurPicker = nil;
-  if (_sharedBlurPicker == nil)
-    _sharedBlurPicker = [OBBlurPicker new];
-  return _sharedBlurPicker;
-}
-
 - (OBBlurPickerOverlay *)overlayView {
   if (_overlayView == nil) {
     _overlayView = [[[NSBundle mainBundle] loadNibNamed: @"OBBlurPickerOverlay" owner: nil options: nil] firstObject];
@@ -43,14 +36,9 @@
 }
 
 + (OBBlurPicker *)showWithParentView: (UIView *)parentView withMessage: (NSString *)message shouldShowCancelButton: (BOOL)shouldShow {
-  OBBlurPicker *picker = [self sharedBlurPicker];
+  OBBlurPicker *picker = [OBBlurPicker new];
   [picker showWithParentView: parentView withMessage: message shouldShowCancelButton: shouldShow];
   return picker;
-}
-
-+ (void)hide {
-  OBBlurPicker *picker = [self sharedBlurPicker];
-  [picker hide];
 }
 
 #pragma mark - Show and Hide
