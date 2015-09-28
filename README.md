@@ -21,13 +21,13 @@ Objective-C
 ```objc
 #import <OBBlurPicker/OBBlurPicker.h>
 
-# ...
+// ...
 
 OBBlurPicker *picker = [OBBlurPicker showWithParentView: self.navigationController.view withMessage: @"Select State"];
 [picker reloadPickerWithDatasource: self.pickerDatasource andDelegate: self.pickerDelegate];
 [picker setDelegate: self];
 
-# ...
+// ...
 
 [picker hide];
 ```
@@ -36,13 +36,13 @@ Swift
 ```swift
 import OBBlurPicker
 
-# ...
+// ...
 
 let picker = OBBlurPicker.showWithParentView(self.navigationController.view, withMessage: "Select State")
 picker.reloadPickerWithDatasource(self.pickerDatasource, andDelegate: self.pickerDelegate)
 picker.delegate = self;
 
-# ...
+// ...
 
 picker.hide()
 ```
