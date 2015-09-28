@@ -15,6 +15,38 @@ it, simply add the following line to your Podfile:
 pod 'OBBlurPicker', :git => 'https://github.com/Openbay/OBBlurPicker', :tag => '1.0.0'
 ```
 
+## Usage
+
+Objective-C
+```objc
+#import <OBBlurPicker/OBBlurPicker.h>
+
+# ...
+
+OBBlurPicker *picker = [OBBlurPicker showWithParentView: self.navigationController.view withMessage: @"Select State"];
+[picker reloadPickerWithDatasource: self.pickerDatasource andDelegate: self.pickerDelegate];
+[picker setDelegate: self];
+
+# ...
+
+[picker hide];
+```
+
+Swift
+```swift
+import OBBlurPicker
+
+# ...
+
+let picker = OBBlurPicker.showWithParentView(self.navigationController.view, withMessage: "Select State")
+picker.reloadPickerWithDatasource(self.pickerDatasource, andDelegate: self.pickerDelegate)
+picker.delegate = self;
+
+# ...
+
+picker.hide()
+```
+
 ## Author
 
 Ryan Popa, rp@openbay.com
