@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OBBlurPicker"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "OBBlurPicker is an attractive, full screen picker widget."
 
   s.description      = <<-DESC

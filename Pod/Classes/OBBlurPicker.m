@@ -16,13 +16,11 @@
 
 @implementation OBBlurPicker
 
-- (OBBlurPickerOverlay *)overlayView {
-  if (_overlayView == nil) {
+- (instancetype)init {
     _overlayView = [[[NSBundle mainBundle] loadNibNamed: @"OBBlurPickerOverlay" owner: nil options: nil] firstObject];
     [_overlayView.doneButton addTarget: self action: @selector(onDoneTapped:) forControlEvents: UIControlEventTouchUpInside];
     [_overlayView.cancelButton addTarget: self action: @selector(onCancelTapped:) forControlEvents: UIControlEventTouchUpInside];
-  }
-  return _overlayView;
+    return self;
 }
 
 - (UIPickerView *)pickerView {
