@@ -17,7 +17,7 @@
 @implementation OBBlurPicker
 
 - (instancetype)init {
-    _overlayView = [[[NSBundle mainBundle] loadNibNamed: @"OBBlurPickerOverlay" owner: nil options: nil] firstObject];
+    _overlayView = [[[NSBundle bundleForClass: [self class]] loadNibNamed: @"OBBlurPickerOverlay" owner: nil options: nil] firstObject];
     [_overlayView.doneButton addTarget: self action: @selector(onDoneTapped:) forControlEvents: UIControlEventTouchUpInside];
     [_overlayView.cancelButton addTarget: self action: @selector(onCancelTapped:) forControlEvents: UIControlEventTouchUpInside];
     return self;
@@ -98,11 +98,10 @@
   
   //Reset the picker selection
   for (int i = 0; i < self.pickerView.numberOfComponents; i++) {
-    NSInteger middleItemIndex = [self.pickerView numberOfRowsInComponent: i] / 2;
-    [self.pickerView selectRow: middleItemIndex inComponent: i animated: NO];
+    [self.pickerView selectRow: 0 inComponent: i animated: NO];
     
     if ([self.pickerView.delegate respondsToSelector: @selector(pickerView:didSelectRow:inComponent:)])
-      [self.pickerView.delegate pickerView: self.pickerView didSelectRow: middleItemIndex inComponent: i];
+      [self.pickerView.delegate pickerView: self.pickerView didSelectRow: 0 inComponent: i];
   }
 }
 
