@@ -1,5 +1,5 @@
 PODS:
-  - OBBlurPicker (1.0.0):
+  - OBBlurPicker (1.1):
     - UIImageEffects
   - UIImageEffects (0.0.1)
 
@@ -8,10 +8,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   OBBlurPicker:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  OBBlurPicker: 77338487351d5770118986d211ea391fb2e9587f
+  OBBlurPicker: 72011797944ea2a4b2b47c1943266e25e952670d
   UIImageEffects: 37b99fa461e4965f332ca82e92f2c22a1075ee84
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 2aefaf4bfcfd172a51a3a6107a512534932fd333
+
+COCOAPODS: 1.2.1

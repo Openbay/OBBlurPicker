@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F361DFEF508BE380A17176E /* Pods_OBBlurPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13765D75D6CDA5A86834C7 /* Pods_OBBlurPicker.framework */; };
 		BBE183041BB9B947007C47ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE183031BB9B947007C47ED /* main.m */; };
 		BBE183071BB9B947007C47ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE183061BB9B947007C47ED /* AppDelegate.m */; };
 		BBE1830A1BB9B947007C47ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE183091BB9B947007C47ED /* ViewController.m */; };
@@ -17,7 +18,6 @@
 		BBE1832B1BB9BB38007C47ED /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BBE183281BB9BB38007C47ED /* LICENSE */; };
 		BBE1832C1BB9BB38007C47ED /* OBBlurPicker.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BBE183291BB9BB38007C47ED /* OBBlurPicker.podspec */; };
 		BBE1832D1BB9BB38007C47ED /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BBE1832A1BB9BB38007C47ED /* README.md */; };
-		F139018FA82EA9B8553A9DF2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C055D07D5B592B3A12435C40 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC1431FFF69177395DD48E1 /* Pods-OBBlurPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBBlurPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBBlurPicker/Pods-OBBlurPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		131A62E0EED153C52E6EDEAC /* Pods-OBBlurPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBBlurPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBBlurPicker/Pods-OBBlurPicker.release.xcconfig"; sourceTree = "<group>"; };
+		6F13765D75D6CDA5A86834C7 /* Pods_OBBlurPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBBlurPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE182FE1BB9B947007C47ED /* OBBlurPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBBlurPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE183021BB9B947007C47ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE183031BB9B947007C47ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,8 +51,6 @@
 		BBE183291BB9BB38007C47ED /* OBBlurPicker.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OBBlurPicker.podspec; path = ../OBBlurPicker.podspec; sourceTree = "<group>"; };
 		BBE1832A1BB9BB38007C47ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C055D07D5B592B3A12435C40 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6484653200F4ACF09AED486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		DD69E83BA2A171543B6C8C30 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F139018FA82EA9B8553A9DF2 /* Pods.framework in Frameworks */,
+				7F361DFEF508BE380A17176E /* Pods_OBBlurPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,19 +72,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39C8DF3AF514739F6ED3E1A7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD69E83BA2A171543B6C8C30 /* Pods.debug.xcconfig */,
-				D6484653200F4ACF09AED486 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		53350FAF640DEAC113173397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C055D07D5B592B3A12435C40 /* Pods.framework */,
+				6F13765D75D6CDA5A86834C7 /* Pods_OBBlurPicker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,8 +88,8 @@
 				BBE183001BB9B947007C47ED /* OBBlurPicker */,
 				BBE1831A1BB9B947007C47ED /* OBBlurPickerTests */,
 				BBE182FF1BB9B947007C47ED /* Products */,
-				39C8DF3AF514739F6ED3E1A7 /* Pods */,
 				53350FAF640DEAC113173397 /* Frameworks */,
+				C46673FF0B6317A75EB68D4E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +153,15 @@
 			name = "Pod Metadata";
 			sourceTree = "<group>";
 		};
+		C46673FF0B6317A75EB68D4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DC1431FFF69177395DD48E1 /* Pods-OBBlurPicker.debug.xcconfig */,
+				131A62E0EED153C52E6EDEAC /* Pods-OBBlurPicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,12 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE183211BB9B947007C47ED /* Build configuration list for PBXNativeTarget "OBBlurPicker" */;
 			buildPhases = (
-				B911978FE8B240DE09F28132 /* Check Pods Manifest.lock */,
+				D3885444B19B810745720FD1 /* [CP] Check Pods Manifest.lock */,
 				BBE182FA1BB9B947007C47ED /* Sources */,
 				BBE182FB1BB9B947007C47ED /* Frameworks */,
 				BBE182FC1BB9B947007C47ED /* Resources */,
-				10B0B78FF91BB690969F7A7F /* Embed Pods Frameworks */,
-				2B7BA767F8F72634EE84E4CB /* Copy Pods Resources */,
+				6A44F4392DB03181B56D61C0 /* [CP] Embed Pods Frameworks */,
+				C17796090E31B56C7BDFF2E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,49 +263,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10B0B78FF91BB690969F7A7F /* Embed Pods Frameworks */ = {
+		6A44F4392DB03181B56D61C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBBlurPicker/Pods-OBBlurPicker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2B7BA767F8F72634EE84E4CB /* Copy Pods Resources */ = {
+		C17796090E31B56C7BDFF2E1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBBlurPicker/Pods-OBBlurPicker-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B911978FE8B240DE09F28132 /* Check Pods Manifest.lock */ = {
+		D3885444B19B810745720FD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -442,7 +444,7 @@
 		};
 		BBE183221BB9B947007C47ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD69E83BA2A171543B6C8C30 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0DC1431FFF69177395DD48E1 /* Pods-OBBlurPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OBBlurPicker/Info.plist;
@@ -453,7 +455,7 @@
 		};
 		BBE183231BB9B947007C47ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6484653200F4ACF09AED486 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 131A62E0EED153C52E6EDEAC /* Pods-OBBlurPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OBBlurPicker/Info.plist;
